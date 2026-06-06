@@ -13,8 +13,7 @@ LABELS_PATH = os.path.join(HERE, "labels.json")
 IMG_SIZE = 160
 
 # Auto-download model from Hugging Face if not present locally
-# (update the URL after you upload to Hugging Face)
-MODEL_URL = "https://huggingface.co/ashikaasriarun/MobileNetV2-NewPlantDiseases/resolve/main/best_mnv2_v2.keras"
+MODEL_URL = "https://huggingface.co/ashikaasriarun/MobileNet-V2-NewPlantDisease/resolve/main/best_mnv2_v2.keras"
 
 if not os.path.exists(MODEL_PATH):
     print(f"Model not found locally. Downloading from Hugging Face (~28 MB)...")
