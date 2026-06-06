@@ -48,10 +48,10 @@ pip install -r requirements.txt
 The model file (~28 MB) is hosted on Hugging Face:
 
 **Direct download:**  
-https://huggingface.co/ashikaasriarun/MobileNetV2-NewPlantDiseases/resolve/main/best_mnv2_v2.keras
+https://huggingface.co/ashikaasriarun/MobileNet-V2-NewPlantDisease/resolve/main/best_mnv2_v2.keras
 
 **Model page:**  
-https://huggingface.co/ashikaasriarun/MobileNetV2-NewPlantDiseases
+https://huggingface.co/ashikaasriarun/MobileNet-V2-NewPlantDisease
 
 Place `best_mnv2_v2.keras` in the same folder as `app.py`.
 
@@ -74,15 +74,13 @@ Open <http://127.0.0.1:7860> in your browser. Upload a leaf image to get a disea
 | `requirements.txt` | Python dependencies |
 | `best_mnv2_v2.keras` | Trained model weights (download from Hugging Face) |
 
-## Comparison with Original PlantVillage
+## Comparison with other models
 
-This model was trained on the augmented New Plant Diseases Dataset (~87k images), 
-which is larger than the original PlantVillage (~54k images). Both achieve excellent accuracy.
-
-| Dataset | Images | Accuracy | F1 Score |
+| Model + Dataset | Accuracy | F1 Score | File Size |
 |---|---|---|---|
-| **New Plant Diseases (~87k)** | 87,000 | **99.00%** | **0.9900** |
-| Original PlantVillage (~54k) | 54,000 | 99.36% | 0.9943 |
+| **MobileNetV2 + New Plant Diseases (this)** | **99.00%** | **0.9900** | ~28 MB |
+| MobileNetV2 + Original PlantVillage | 99.36% | 0.9943 | ~28 MB |
+| EfficientNet-B0 + Original PlantVillage | 99.71% | 0.9972 | ~50 MB |
 
 ## License
 
@@ -90,7 +88,7 @@ MIT — see [LICENSE](LICENSE).
 
 ## Citation
 
-Dataset: 
+Dataset:
 
 > Bhattarai, S. (2018). *New Plant Diseases Dataset (Augmented)*. Kaggle.  
 > https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset
